@@ -1,0 +1,187 @@
+#hero {
+  .container {
+    height: 110vh;
+    gap: 5rem;
+    > .left-side {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      > a {
+        font-size: 1.5rem;
+        color: $fBlkClr;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          color: $blkClr;
+          transform: scale(1.2);
+        }
+      }
+    }
+    > .right-side {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      > div {
+        &:first-of-type {
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem;
+          font-family: $openSans;
+          > .title {
+            color: $blkClr;
+            font-family: $poppins;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+          }
+          > .job-title {
+            font-size: 1.5rem;
+            color: $lBlkClr;
+            letter-spacing: 1px;
+            font-weight: bold;
+            > span {
+              font-weight: bold;
+              color: orangered;
+            }
+          }
+          > .info {
+            font-size: 1rem;
+          }
+          > .btn-box {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-direction: row;
+            > a {
+              width: fit-content;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              padding: 1rem;
+              border-radius: 15px;
+              border: none;
+              background-color: $fBlkClr;
+              color: $whtClr;
+              font-size: 1rem;
+              font-family: $poppins;
+              font-weight: bolder;
+              letter-spacing: 1px;
+              transition: all 1s;
+              margin-top: 2rem;
+              &:hover {
+                cursor: pointer;
+                transform: scale(0.9);
+                background-color: $blkClr;
+              }
+            }
+            > .resume-btn {
+              border: 2px solid $fBlkClr;
+              background-color: $whtClr;
+              color: $blkClr;
+              &:hover {
+                background-color: $whtClr;
+              }
+            }
+          }
+          > .scroll-down {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-family: $poppins;
+            > span {
+              font-size: 1rem;
+              color: $fBlkClr;
+              > .angle {
+                animation: upDown 2s ease-in-out infinite forwards;
+              }
+            }
+          }
+        }
+        &:last-of-type {
+          width: 300px;
+          height: 300px;
+          > img {
+            padding: 0.2rem;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            box-shadow: 0 0 10px rgb(112, 112, 112);
+            background-color: rgb(255, 248, 234);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+    color: $blkClr;
+  }
+  100% {
+    transform: translateY(190%);
+    color: $whtClr;
+  }
+}
+
+@media screen and (max-width: 822px) {
+  #hero {
+    > .container {
+      position: relative;
+      > .left-side {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+      }
+      > .right-side {
+        flex-direction: column-reverse;
+        align-items: center;
+        > div {
+          &:first-of-type {
+            align-items: center;
+          }
+          &:last-of-type {
+            height: 280px;
+            width: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:498px) {
+  #hero {
+    > .container {
+      >.left-side{
+        display:none;
+      }
+      > .right-side {
+        > div {
+          &:first-of-type {
+            >.title{
+              font-size: 2.1rem;
+            }
+            >.job-title{
+              font-size: 1.3rem;
+            }
+            >.btn-box{
+              >a{
+                padding: .8rem;
+              }
+            }
+          }
+          &:last-of-type {
+            height: 250px;
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

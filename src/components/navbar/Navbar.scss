@@ -1,0 +1,45 @@
+#nav {
+  background-color: $fBlkClr;
+  font-family: $poppins;
+  color: $whtClr;
+  box-shadow: 0 0 5px #3a3a3a;
+  position: sticky;
+  top: 0;
+ z-index: 11;
+  > .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .banner {
+      font-size: 1.5rem;
+    }
+
+    > ul {
+      display: flex;
+      gap: 2rem;
+
+      > li {
+        padding: 0.5rem;
+        transition: all 0.2s;
+
+        > a {
+          color: $whtClr;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:657px) {
+  #nav{
+    display: none;
+  }
+}
