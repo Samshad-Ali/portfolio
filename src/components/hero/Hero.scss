@@ -1,7 +1,6 @@
 #hero {
- max-width: 100%;
- overflow: hidden;
-  .container {
+ width: 100%;
+ .container {
     height: 80vh;
     gap: 5rem;
     > .left-side {
@@ -20,6 +19,7 @@
       }
     }
     > .right-side {
+      overflow-x: hidden;
       display: flex;
       align-items: center;
       gap: 3rem;

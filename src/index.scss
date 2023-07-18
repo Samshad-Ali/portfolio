@@ -29,15 +29,14 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-html{
-  scroll-behavior: smooth;
-  background-color:#f7f7f7;
-}
 body{
+  background-color:#f7f7f7;
   position: relative;
   overflow-x: hidden;
+  width: 100%;
 }
 .container{
   max-width: 960px;
@@ -110,6 +109,7 @@ body{
   transform: translateX(0);
 }
 @media screen and (max-width:657px) {
+ 
   .bars{
     display: block;
   }
