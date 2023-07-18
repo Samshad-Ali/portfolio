@@ -1,9 +1,11 @@
 #work {
+  max-width: 100%;
   height: unset;
-  margin-top: 20px;
+  margin-top: 40px;
   > .container {
     flex-direction: column;
     gap: 2rem;
+
     font-family: $openSans;
     > .head-box {
       display: flex;
@@ -43,12 +45,14 @@
           border-radius: 4px;
           padding: 1rem;
           box-shadow: 0 0 5px #3a3a3a;
+          background-color: $whtClr;
         }
       }
     }
   }
 }
 .card-item {
+
   height: 100%;
   width: 100%;
   img {

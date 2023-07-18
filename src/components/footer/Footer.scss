@@ -1,0 +1,34 @@
+.footer{
+    margin-top: 40px;
+    background-color: $fBlkClr;
+    position: relative;
+    .container{
+        height: 100px;
+        color: $whtClr;
+        font-family: $openSans;
+        font-size: .9rem;
+        >a{
+            position: absolute;
+            right: 2rem;
+            top: 40%;
+            background-color: $whtClr;
+            color: $fBlkClr;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            padding: .3rem;
+            display: grid;
+            place-items: center;
+            animation: upDown 1.5s ease  infinite alternate;
+        }
+    }
+}
+
+
+@keyframes upDown {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(40%);
+    }
+}

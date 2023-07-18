@@ -5,7 +5,8 @@
   box-shadow: 0 0 5px #3a3a3a;
   position: sticky;
   top: 0;
- z-index: 11;
+  width: 100%;
+ z-index: 111;
   > .container {
     height: 80px;
     display: flex;
@@ -36,7 +37,6 @@
     }
   }
 }
-
 
 @media screen and (max-width:657px) {
   #nav{

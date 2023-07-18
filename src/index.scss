@@ -21,6 +21,7 @@
   @import './components/work/Work.scss';
   @import './components/skills/Skill.scss';
   @import './components/contact/Contact.scss';
+  @import './components/footer/Footer.scss';
  
   *{
   padding: 0;
@@ -34,11 +35,15 @@ html{
   scroll-behavior: smooth;
   background-color:#f7f7f7;
 }
-
+body{
+  position: relative;
+  overflow-x: hidden;
+}
 .container{
   max-width: 960px;
   margin-inline: auto;
   padding: 0 1rem;
+  
 }
 
 .flex-center{
@@ -47,6 +52,71 @@ html{
     align-items: center;
 }
 
+.bars{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  z-index: 43311;
+  padding: .5rem;
+  color: orangered;
+  display: none;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+}
+
+.phone-nav{
+  transition: all .5s;
+  transform: translateX(-100%);
+  display: none;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 3222;
+  background-color: $fBlkClr;
+  color: $whtClr;
+  >.container{
+    font-family: $openSans;
+    padding: 2rem;
+    height: 100vh;
+    flex-direction: column;
+    >h2{
+      font-family: $poppins;
+      color: orangered;
+    }
+    >.phone-itemBox{
+      flex-direction: column;
+      padding: 2rem;
+      >li{
+        padding: 1rem;
+        >a{
+          margin: auto;
+          color: $whtClr;
+          padding: .5rem;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+.phone-nav-come{
+  transform: translateX(0);
+}
+@media screen and (max-width:657px) {
+  .bars{
+    display: block;
+  }
+  .phone-nav{
+    display: block;  
+  }
+}
 ::-webkit-scrollbar{
   width: 5px;
 }
@@ -57,3 +127,5 @@ html{
 ::-webkit-scrollbar-track{
   background-color: $whtClr;
 }
+
+
