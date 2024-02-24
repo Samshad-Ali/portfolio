@@ -5,7 +5,8 @@ import shein from "./shein.png";
 import socialMedia from './social-media.webp';
 import youtube from './youtube.png';
 import codepen from './codepen.png';
-import todo from './todo.jpeg'
+import todo from './todo.jpeg';
+import dashboard from './dashboard.avif';
 const data = [
   {
     name:'Youtube Clone Nextjs',
@@ -43,6 +44,11 @@ const data = [
 ];
 
 export const BackendData=[
+  {
+    name:"Admin DashBoard",
+    img:dashboard,
+    link: "https://github.com/Samshad-Ali/nextjs-admin-dashboard",
+  },
   {
     name:"Social Hub",
     img:socialMedia,
