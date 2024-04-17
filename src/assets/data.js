@@ -2,11 +2,11 @@ import cart from "./cart.png";
 import crypto from "./crypto.png";
 import weather from "./weather.png";
 import shein from "./shein.png";
-import socialMedia from './social-media.webp';
+import oyo from './oyo.png';
 import youtube from './youtube.png';
 import codepen from './codepen.png';
 import todo from './todo.jpeg';
-import dashboard from './dashboard.avif';
+import dashboard from './dashboard.png';
 const data = [
   {
     name:'Youtube Clone Nextjs',
@@ -50,9 +50,9 @@ export const BackendData=[
     link: "https://github.com/Samshad-Ali/nextjs-admin-dashboard",
   },
   {
-    name:"Social Hub",
-    img:socialMedia,
-    link: "https://github.com/Samshad-Ali/socia-media-server",
+    name:"Oyo-Clone",
+    img:oyo,
+    link: "https://github.com/Samshad-Ali/oyo-clone-full-stack-app",
   },
   {
     name:"To-Do App",

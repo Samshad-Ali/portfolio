@@ -1,8 +1,10 @@
 import React from "react";
-import { FaCss3Alt, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
 import { BiLogoTailwindCss, BiLogoMongodb } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
+
 import { SiExpress } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import {motion} from 'framer-motion'
@@ -29,7 +31,7 @@ const Skill = () => {
             whileInView={{y:'0%',opacity:1}}
             transition={{delay:.1}}
        >
-       CSS  <span className="icon"><FaCss3Alt/></span>
+       Express js  <span className="icon"><SiExpress/></span>
        </motion.p>
        < motion.p className="title js"
             initial={{y:'-100%',opacity:0}}
@@ -64,8 +66,8 @@ const Skill = () => {
             whileInView={{x:'0%',opacity:1}}
             transition={{delay:.1}}
         >
-       Express js <span className="icon">
-       <SiExpress/>
+       Next js <span className="icon">
+       <TbBrandNextjs/>
        </span>
        </motion.p>
        < motion.p className="title"
